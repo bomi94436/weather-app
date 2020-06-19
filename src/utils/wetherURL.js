@@ -14,7 +14,7 @@ const getWetherURL = (
   nx,
   ny
 ) => {
-  return `/${getapi}?serviceKey=${key}&dataType=JSON&numOfRows=${numOfRows}&pageNo=${pageNo}&base_date=${base_date}&base_time=${base_time}&nx=${nx}&ny=${ny}`;
+  return `http://apis.data.go.kr/1360000/VilageFcstInfoService/${getapi}?serviceKey=${key}&dataType=JSON&numOfRows=${numOfRows}&pageNo=${pageNo}&base_date=${base_date}&base_time=${base_time}&nx=${nx}&ny=${ny}`;
 };
 
 export default getWetherURL;

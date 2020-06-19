@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { matchIcon } from "utils/weatherUtils";
+import icon from "utils/weatherIcon";
 
 const VilageFcstItemBlock = styled.div`
   width: 30rem;
@@ -40,7 +41,7 @@ const VilageFcstItemBlock = styled.div`
 `;
 
 const VilageFcstItem = ({ time, t3h, reh, pop, sky, pty }) => {
-  const src = "/icon/" + matchIcon(pty, sky) + ".png";
+  const src = icon[matchIcon(pty, sky)];
   return (
     <VilageFcstItemBlock>
       <p className="time">{time}시</p>

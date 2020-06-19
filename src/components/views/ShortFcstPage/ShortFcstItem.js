@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { matchIcon } from "utils/weatherUtils";
 import { getPrecipitation } from "utils/weatherUtils";
+import icon from "utils/weatherIcon";
 
 const ShortFcstItemBlock = styled.div`
   width: 13rem;
@@ -31,7 +32,7 @@ const ShortFcstItemBlock = styled.div`
 
 const ShortFcstItem = ({ time, date, t1h, reh, rn1, sky, pty }) => {
   time = Number(time) ? Number(time) - 1 : 23;
-  const src = "/icon/" + matchIcon(pty, sky) + ".png";
+  const src = icon[matchIcon(pty, sky)];
   return (
     <ShortFcstItemBlock>
       <p>
