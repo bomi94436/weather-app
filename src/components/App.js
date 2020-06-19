@@ -14,8 +14,8 @@ function App() {
         <NavBar />
         <div>
           <Switch>
-            <Route exact path="/WeatherApp/" component={ShortFcstPage} />
-            <Route path="/WeatherApp/vilage-fcst" component={VilageFcstPage} />
+            <Route exact path="/" component={ShortFcstPage} />
+            <Route path="/vilage-fcst" component={VilageFcstPage} />
             <Route component={NoMatch} />
           </Switch>
         </div>
