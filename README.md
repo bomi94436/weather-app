@@ -11,4 +11,4 @@
 
 ### contents
 
-react를 이용하여 날씨 애플리케이션을 구현하였고, [여기](http://bomi94436.github.io/weather-app)로 들어기사면 테스트할 수 있습니다.
+react를 이용하여 날씨 애플리케이션을 구현하였습니다.

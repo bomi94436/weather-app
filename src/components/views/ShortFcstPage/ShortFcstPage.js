@@ -31,9 +31,7 @@ const ShortFcstPage = () => {
         getShortFcstTime(new Date()),
         "97",
         "77"
-      ),
-      (req, res) =>
-        req.setHeader("Content-Security-Policy", "upgrade-insecure-requests")
+      )
     );
   }, []);
 
